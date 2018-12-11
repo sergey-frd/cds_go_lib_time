@@ -73,13 +73,10 @@ func Calc_Time_1(
 
         p("dff.Nanoseconds())          =",dff.Nanoseconds())
 
-
-
         fmt.Printf("Delta = %d years, %d months, %d days, %d hours, %d mins and %d seconds old.",
             year, month, day, hour, min, sec)
 
-
-         afterTenSeconds := start.Add(time.Second * 10)
+        afterTenSeconds := start.Add(time.Second * 10)
         afterTenMinutes := start.Add(time.Minute * 10)
         afterTenHours := start.Add(time.Hour * 10)
         afterTenDays := start.Add(time.Hour * 24 * 10)
@@ -89,8 +86,6 @@ func Calc_Time_1(
         fmt.Printf("start.Add(time.Minute * 10) = %v\n", afterTenMinutes)
         fmt.Printf("start.Add(time.Hour * 10) = %v\n", afterTenHours)
         fmt.Printf("start.Add(time.Hour * 24 * 10) = %v\n", afterTenDays)
-
-
 
 } // func Calc_Time_1
 
